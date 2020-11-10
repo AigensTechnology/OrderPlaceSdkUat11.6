@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name = "OrderPlaceSdkUat11.6"
-s.version = "0.4.0"
+s.version = "0.4.1"
 s.summary = "Order Place Sdk swift5 Uat with xcode 11.6"
 
 s.description = <<-DESC
@@ -41,11 +41,6 @@ wechat.ios.vendored_library = 'Classess/frameworks/orderPlaceWechatPaySDK/libWeC
 wechat.frameworks = 'SystemConfiguration', 'Security', 'CoreTelephony', 'CFNetwork'
 wechat.libraries = 'z', 'c++', 'sqlite3.0'
 wechat.dependency 'OrderPlaceSdkUat11.6/Core'
-end
-
-s.subspec "StripeApple" do |sa|
-sa.ios.vendored_frameworks = 'Classess/frameworks/orderPlaceStripeAppleSDK/Stripe.framework', 'Classess/frameworks/orderPlaceStripeAppleSDK/OrderPlaceStripeAppleSDK.framework'
-sa.dependency 'OrderPlaceSdkUat11.6/Core'
 end
 
 end
